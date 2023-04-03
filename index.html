@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_package_v0.16 (1)/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_package_v0.16 (1)/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_package_v0.16 (1)/favicon-16x16.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header>
+      <section class="buscador">
+        <img src="pngwing.com.png" alt="pokedex" />
+        <input
+          type="text"
+          id="input-busqueda"
+          placeholder="Busca un Pokémon..."
+          onkeyup="mostrarResultados()" />
+        <div id="resultados-busqueda" class="oculto"></div>
+      </section>
+    </header>
+    <main>
+      <section id="ficha-pokemon">
+        <h2 id="nombre-pokemon"></h2>
+        <img id="imagen-pokemon-art" src="" alt="" />
+        <img id="imagen-pokemon" src="" alt="" />
+        <img id="imagen-pokemon-posterior" src="" alt="" />
+        <p id="descripcion-pokemon"></p>
+        <ul id="tipos-pokemon"></ul>
+        <ul id="habilidades-pokemon"></ul>
+        <ul id="estadisticas-pokemon"></ul>
+      </section>
+    </main>
+    <footer>
+      <p>JSB18RT Grupo F</p>
+      <audio src="Chill___Relaxing_Pokémon_Music_Mix_YMEblRM4pGc.mp3"autoplay></audio>
+    </footer>
+  </body>
+
+  <script src="pokemon.json"></script>
+  <script src="script.js"></script>
+</html>
